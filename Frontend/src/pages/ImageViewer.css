@@ -1,0 +1,50 @@
+.viewer-wrapper {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .viewer {
+    max-height: 90%;
+    max-width: 90%;
+    overflow: auto;
+  }
+  
+  .viewer > img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .viewer > .nav-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .viewer > .nav-buttons > button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  
+  .viewer > .nav-buttons > button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

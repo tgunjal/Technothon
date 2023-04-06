@@ -1,0 +1,120 @@
+
+   .image-viewer-container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 150px);
+  }
+  
+  .sidebar {
+    flex: 1;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #f8f8f8;
+  }
+  
+  .sidebar h4 {
+    margin-bottom: 20px;
+  }
+  
+  .image-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .image-card:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .image-card img {
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .image-card-body {
+    flex: 1;
+  }
+  
+  .image-card-body p {
+    margin: 0;
+  }
+  
+  .image-card-body button {
+    margin-left: 10px;
+  }
+  
+  .viewer {
+    flex: 2;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow-y: auto;
+  }
+  
+  .viewer h3 {
+    margin-bottom: 20px;
+  }
+  
+  .viewer .image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  
+  .viewer .image-wrapper .image {
+    width: calc(50% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .viewer .image-wrapper .image:hover {
+    border-color: #007bff;
+  }
+  
+  .viewer .image-wrapper .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .viewer .image-wrapper .image .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .viewer .image-wrapper .image .image-overlay h5 {
+    margin: 0;
+  }
+  
+  .viewer .image-wrapper .image .image-overlay p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .viewer .image-wrapper .image .image-overlay .button-container {
+    margin-top: 10px;
+  }
+  
+  .viewer .image-wrapper .image .image-overlay .button-container button {
+    margin-right: 10px;
+  }
+  
